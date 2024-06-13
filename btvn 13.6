@@ -1,0 +1,12 @@
+def L(A):
+    if (A>1) and (A%1==0) and (A%A==0):
+        return True
+    else:
+        return False
+def main():
+    N = int(input('enter the number: '))
+    for i in range(1,N):
+        if L(i): 
+            print(i)
+if __name__ == '__main__':
+    main()
